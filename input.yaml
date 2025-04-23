@@ -1,0 +1,61 @@
+a=create_matrix(2,2);
+b= create_matrix(2,2);
+print_matrix(a);
+print_matrix(b);
+c=zero_matrix(2,3);
+print_matrix(c);
+d=copy_matrix(a);
+print_matrix(d);
+e=identity_matrix(3);
+print_matrix(e);
+A=add_matrix(a,b);
+print_matrix(A);
+subtract_matrix(a,b);
+multiply_matrix(a,b);
+transpose_matrix(a);
+scalar_multiply(a,5);
+matrix_determinant(a);
+invert_matrix(a);
+matrix_trace(a);
+matrix_rank(a);
+matrix_norm(a,"frobenius");
+matrix_power(a,2);
+a = create_matrix(3, 3);
+print_matrix(a);
+matrix_diagonal(a);
+matrix_is_square(a);
+matrix_is_symmetric(a);
+matrix_is_identity(a);
+matrix_is_singular(a);
+matrix_is_positive_definite(a);
+
+a=create_matrix(2,2);
+row_scale(a, 1, 2);
+
+a= create_matrix(2, 2);
+row_swap(a,1,0);
+
+a= create_matrix(2, 2);
+row_addition(a,0,1,2);
+
+a= create_matrix(2, 2);
+column_addition(a,0,1,2);
+
+a= create_matrix(2, 2);
+column_swap(a,0,1,2);
+
+a= create_matrix(2, 2);
+column_scale(a,0,1);
+
+a = create_matrix(3, 3);
+print_matrix(a);
+get_submatrix(a, 0, 0, 1, 1);
+concatenate_matrices_horizontally(a, a);
+concatenate_matrices_vertically(a, a);
+
+a = create_matrix(2, 2);
+print_matrix(a);
+reshape_matrix(a, 2, 2);
+flatten_matrix(a);
+is_equal(a, a, 0);
+matrix_histogram(a);
