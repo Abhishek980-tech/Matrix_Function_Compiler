@@ -1,0 +1,79 @@
+Matrix Creation and Basic Operations:
+  create_matrix(a, m, n): matrix_create -> a, m, n
+  delete_matrix(a): matrix_delete -> a
+  copy_matrix(a): matrix_copy -> a
+  identity_matrix(n): matrix_identity -> n
+  zero_matrix(m, n): matrix_zero -> m, n
+  random_matrix(m, n, min, max): matrix_random -> m, n, min, max
+
+Matrix I/O:
+  print_matrix(a): matrix_print -> a
+
+Matrix Arithmetic:
+  add_matrices(a, b): matrix_add -> a, b
+  subtract_matrices(a, b): matrix_subtract -> a, b
+  multiply_matrices(a, b): matrix_multiply -> a, b
+  scalar_multiply(a, k): matrix_scalar_multiply -> a, k
+
+
+Matrix Transformations:
+  transpose_matrix(a): matrix_transpose -> a
+  invert_matrix(a): matrix_inverse -> a
+  matrix_power(a, k): matrix_power -> a, k
+
+
+Matrix Properties:
+  matrix_determinant(a): matrix_determinant -> a
+  matrix_trace(a): matrix_trace -> a
+  matrix_rank(a): matrix_rank -> a
+  matrix_norm(a, type): matrix_norm -> a, type
+  matrix_diagonal(a): matrix_diagonal -> a
+
+
+Matrix Checks:
+  matrix_is_symmetric(a): matrix_is_symmetric -> a
+  matrix_is_identity(a): matrix_is_identity -> a
+  matrix_is_square(a): matrix_is_square -> a
+  matrix_is_singular(a): matrix_is_singular -> a
+  matrix_is_positive_definite(a): matrix_is_positive_definite -> a
+
+
+Row Operations:
+  row_swap(a, r1, r2): row_swap -> a, r1, r2
+  row_scale(a, r, k): row_scale -> a, r, k
+  row_addition(a, r1, r2, k): row_add -> a, r1, r2, k
+
+
+Column Operations:
+  column_swap(a, c1, c2): col_swap -> a, c1, c2
+  column_scale(a, c, k): col_scale -> a, c, k
+  column_addition(a, c1, c2, k): col_add -> a, c1, c2, k
+
+
+Matrix Structure and Concatenation:
+  get_submatrix(a, r1, c1, r2, c2): matrix_sub -> a, r1, c1, r2, c2
+  concatenate_matrices_horizontally(a, b): matrix_concat_h -> a, b
+  concatenate_matrices_vertically(a, b): matrix_concat_v -> a, b
+  reshape_matrix(a, m, n): matrix_reshape -> a, m, n
+  flatten_matrix(a): matrix_flatten -> a
+
+
+Decompositions and Factorizations:
+  matrix_lu_decomposition(a): matrix_lu -> a
+  matrix_qr_decomposition(a): matrix_qr -> a
+  matrix_cholesky_decomposition(a): matrix_cholesky -> a
+  matrix_svd(a): matrix_svd -> a
+
+  
+Advanced Matrix Operations:
+  matrix_pseudo_inverse(a): matrix_pinv -> a
+  matrix_projection(a, b): matrix_projection -> a, b
+  kronecker_product(a, b): matrix_kronecker -> a, b
+  hadamard_product(a, b): matrix_hadamard -> a, b
+  outer_product(v1, v2): matrix_outer -> v1, v2
+  matrix_dot_product(a, b): matrix_dot -> a, b
+  matrix_cross_product(v1, v2): matrix_cross -> v1, v2
+  is_equal(a, b, tol): matrix_equal -> a, b, tol
+  matrix_histogram(a): matrix_histogram -> a
+  matrix_eigenvalues(a): matrix_eigenvalues -> a
+  matrix_eigenvectors(a): matrix_eigenvectors -> a
