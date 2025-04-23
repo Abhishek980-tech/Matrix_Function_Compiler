@@ -1,0 +1,125 @@
+functions:
+  name: create_matrix
+    signature: create_matrix(rows, cols)
+    description: |
+      Creates a matrix with a given number of rows and columns. The matrix will be initialized with zeros. The rows and columns are integers, and the function ensures the matrix is created in a valid memory block. Any invalid values, such as non-integer row/column values, will raise an error.
+    parameters:
+      - rows: integer
+      - cols: integer
+    returns: matrix (2D array)
+    examples: |
+      create_matrix(3, 4)
+      Creates a 3x4 matrix initialized to zeros.
+
+  name: delete_matrix
+    signature: delete_matrix(matrix)
+    description: |
+      Deletes the matrix from memory, freeing up the resources used. This function ensures the matrix is no longer referenced or used within the compiler's scope after deletion. If the matrix doesn't exist, an error will be raised.
+    parameters:
+      matrix: matrix (2D array)
+    returns: void
+    examples: |
+      delete_matrix(matrix)
+      Deletes the specified matrix from memory.
+
+  name: print_matrix
+    signature: print_matrix(matrix)
+    description: |
+      Prints the contents of the matrix in a human-readable format to the output. Each row is displayed on a new line, and each element within a row is separated by spaces. The matrix should be a square or rectangular array, and any invalid input type will raise an error.
+    parameters:
+      matrix: matrix (2D array)
+    returns: void
+    examples: |
+      print_matrix(matrix)
+      Prints the matrix in a readable format.
+
+  name: copy_matrix
+    signature: copy_matrix(matrix)
+    description: |
+      Creates a copy of the given matrix, ensuring that the original matrix remains unchanged. This is useful for operations that need a preserved version of the original matrix. It returns a new matrix with the same elements but different memory reference.
+    parameters:
+      matrix: matrix (2D array)
+    returns: matrix (2D array)
+    examples: |
+      copy_matrix(matrix)
+      Returns a new matrix that is a copy of the original matrix.
+
+  name: identity_matrix
+    signature: identity_matrix(size)
+    description: |
+      Generates an identity matrix of the specified size, where the diagonal elements are set to 1 and all other elements are set to 0. The matrix is square, meaning the number of rows equals the number of columns. An error is thrown if a non-positive integer is passed.
+    parameters:
+      size: integer
+    returns: matrix (2D array)
+    examples: |
+      identity_matrix(4)
+      Returns a 4x4 identity matrix:
+      [
+        [1, 0, 0, 0],
+        [0, 1, 0, 0],
+        [0, 0, 1, 0],
+        [0, 0, 0, 1]
+      ]
+
+   name: zero_matrix
+    signature: zero_matrix(rows, cols)
+    description: |
+      Creates a matrix of the specified dimensions, with all elements initialized to zero. This is useful for initialization before performing other operations on a matrix. If any dimension is non-positive, an error will be raised.
+    parameters:
+       rows: integer
+       cols: integer
+    returns: matrix (2D array)
+    examples: |
+      zero_matrix(3, 5)
+      Creates a 3x5 matrix with all zero values.
+
+   name: random_matrix
+    signature: random_matrix(rows, cols, min, max)
+    description: |
+      Creates a matrix of random values with the specified number of rows and columns. The values in the matrix are generated within the given range (min to max). The function ensures the values are uniformly distributed within the range. Invalid values for rows, cols, min, or max will result in an error.
+    parameters:
+       rows: integer
+       cols: integer
+       min: integer
+       max: integer
+    returns: matrix (2D array)
+    examples: |
+      random_matrix(3, 3, 1, 10)
+      Generates a 3x3 matrix with random integers between 1 and 10.
+
+   name: add_matrices
+    signature: add_matrices(matrix1, matrix2)
+    description: |
+      Adds two matrices of the same dimensions element-wise. The function verifies that both matrices are of equal dimensions and throws an error if they are not. The result is a new matrix with the sum of the corresponding elements of the input matrices.
+    parameters:
+       matrix1: matrix (2D array)
+       matrix2: matrix (2D array)
+    returns: matrix (2D array)
+    examples: |
+      add_matrices(matrix1, matrix2)
+      Returns a matrix where each element is the sum of the corresponding elements of matrix1 and matrix2.
+
+   name: subtract_matrices
+    signature: subtract_matrices(matrix1, matrix2)
+    description: |
+      Subtracts matrix2 from matrix1 element-wise. Similar to matrix addition, both matrices must be of the same dimensions. The result is a matrix where each element is the difference between the corresponding elements of matrix1 and matrix2.
+    parameters:
+       matrix1: matrix (2D array)
+       matrix2: matrix (2D array)
+    returns: matrix (2D array)
+    examples: |
+      subtract_matrices(matrix1, matrix2)
+      Returns a matrix where each element is the result of matrix1 minus matrix2.
+
+   name: multiply_matrices
+    signature: multiply_matrices(matrix1, matrix2)
+    description: |
+      Multiplies two matrices, returning a new matrix that is the product of matrix1 and matrix2. The number of columns in matrix1 must equal the number of rows in matrix2 for the multiplication to be valid. If this condition is not met, an error is thrown.
+    parameters:
+       matrix1: matrix (2D array)
+       matrix2: matrix (2D array)
+    returns: matrix (2D array)
+    examples: |
+      multiply_matrices(matrix1, matrix2)
+      Returns the product of matrix1 and matrix2 as a new matrix.
+
