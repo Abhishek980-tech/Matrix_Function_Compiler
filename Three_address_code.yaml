@@ -1,0 +1,271 @@
+1. Create Matrix
+L1 : t1 = create_matrix(a, a)
+matrix = t1
+goto L2
+L2 :
+
+2. Delete Matrix
+L1 : if matrix != NULL goto L2
+delete_matrix(matrix)
+matrix = NULL
+goto L3
+L2 :
+goto L3
+L3 :
+
+3. Print Matrix
+L1 : print_matrix(matrix)
+goto L2
+L2 :
+
+4. Copy Matrix
+L1 : t1 = copy_matrix(matrix)
+copy = t1
+goto L2
+L2 :
+
+5. Identity Matrix
+L1 : t1 = identity_matrix(n)
+matrix = t1
+goto L2
+L2 :
+
+6. Zero Matrix
+L1 : t1 = zero_matrix(a, a)
+matrix = t1
+goto L2
+L2 :
+
+7. Random Matrix
+L1 : t1 = random_matrix(a, a, a, a)
+matrix = t1
+goto L2
+L2 :
+
+8. Add Matrices
+L1 : t1 = add_matrices(A, B)
+result = t1
+goto L2
+L2 :
+
+9. Subtract Matrices
+L1 : t1 = subtract_matrices(A, B)
+result = t1
+goto L2
+L2 :
+
+10. Multiply Matrices
+L1 : t1 = multiply_matrices(A, B)
+result = t1
+goto L2
+L2 :
+
+11. Scalar Multiplication
+L1 : t1 = scalar_multiply(A, scalar)
+result = t1
+goto L2
+L2 :
+
+12. Transpose Matrix
+L1 : t1 = transpose_matrix(A)
+result = t1
+goto L2
+L2 :
+
+13. Invert Matrix
+L1 : t1 = invert_matrix(A)
+result = t1
+goto L2
+L2 :
+
+14. Matrix Determinant
+L1 : t1 = matrix_determinant(A)
+result = t1
+goto L2
+L2 :
+
+15. Matrix Trace
+L1 : t1 = matrix_trace(A)
+result = t1
+goto L2
+L2 :
+
+16. Matrix Rank
+L1 : t1 = matrix_rank(A)
+result = t1
+goto L2
+L2 :
+
+17. Matrix Norm
+L1 : t1 = matrix_norm(A, p)
+result = t1
+goto L2
+L2 :
+
+18. Matrix Power
+L1 : t1 = matrix_power(A, n)
+result = t1
+goto L2
+L2 :
+
+19. Matrix Diagonal
+L1 : t1 = matrix_diagonal(A)
+result = t1
+goto L2
+L2 :
+
+20. Is Symmetric ?
+L1 : t1 = matrix_is_symmetric(A)
+result = t1
+goto L2
+L2 :
+
+21. Is Identity ?
+L1 : t1 = matrix_is_identity(A)
+result = t1
+goto L2
+L2 :
+
+22. Is Square ?
+L1 : t1 = matrix_is_square(A)
+result = t1
+goto L2
+L2 :
+
+23. Is Singular ?
+L1 : t1 = matrix_is_singular(A)
+result = t1
+goto L2
+L2 :
+
+24. Is Positive Definite ?
+L1 : t1 = matrix_is_positive_definite(A)
+result = t1
+goto L2
+L2 :
+
+25. Row Swap
+L1 : row_swap(A, r1, r2)
+goto L2
+L2 :
+
+26. Row Scale
+L1 : row_scale(A, r, scalar)
+goto L2
+L2 :
+
+27. Row Addition
+L1 : row_addition(A, r1, r2, scalar)
+goto L2
+L2 :
+
+28. Column Swap
+L1 : column_swap(A, c1, c2)
+goto L2
+L2 :
+
+29. Column Scale
+L1 : column_scale(A, c, scalar)
+goto L2
+L2 :
+
+30. Column Addition
+L1 : column_addition(A, c1, c2, scalar)
+goto L2
+L2 :
+
+31. Get Submatrix
+L1 : t1 = get_submatrix(A, r1, r2, c1, c2)
+result = 
+goto L2
+L2 :
+
+32. Concatenate Horizontally
+L1 : t1 = concatenate_matrices_horizontally(A, B)
+result = t1
+goto L2
+L2 :
+
+33. Concatenate Vertically
+L1 : t1 = concatenate_matrices_vertically(A, B)
+result = t1
+goto L2
+L2 :
+
+34. LU Decomposition
+L1 : t1 = matrix_lu_decomposition(A)
+result = t1
+goto L2
+L2 :
+
+35. QR Decomposition
+L1 : t1 = matrix_qr_decomposition(A)
+result = t1
+goto L2
+L2 :
+
+36. Eigenvalues
+L1 : t1 = matrix_eigenvalues(A)
+result = t1
+goto L2
+L2 :
+
+37. Eigenvectors
+L1 : t1 = matrix_eigenvectors(A)
+result = t1
+goto L2
+L2 :
+
+38. Cholesky Decomposition
+L1 : t1 = matrix_cholesky_decomposition(A)
+result = t1
+goto L2
+L2 :
+
+39. Singular Value Decomposition
+L1 : t1 = matrix_svd(A)
+result = t1
+goto L2
+L2 :
+
+40. Pseudo - Inverse
+L1 : t1 = matrix_pseudo_inverse(A)
+result = t1
+goto L2
+L2 :
+
+41. Projection
+L1 : t1 = matrix_projection(A, B)
+result = t1
+goto L2
+L2 :
+
+42. Kronecker Product
+L1 : t1 = kronecker_product(A, B)
+result = t1
+goto L2
+L2 :
+
+43. Hadamard Product
+L1 : t1 = hadamard_product(A, B)
+result = t1
+goto L2
+L2 :
+
+44. Outer Product
+L1 : t1 = outer_product(A, B)
+result = t1
+goto L2
+L2 :
+
+45. Dot Product
+L1 : t1 = matrix_dot_product(A, B)
+result = t1
+goto L2
+L2 :
+
+46. Cross Product
+L1 : t1 = matrix_cross_product(A, B)
+result = t1
+goto L2
+L2 :
